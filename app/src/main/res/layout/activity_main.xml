@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/preset_grey"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/eName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/username_hint"
+        android:fontFamily="@font/atlantis_international"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.388"
+        android:autofillHints="username" />
+
+    <EditText
+        android:id="@+id/ePassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/pw_hint"
+        android:fontFamily="@font/atlantis_international"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.485"
+        tools:ignore="Autofill"/>
+
+    <ImageButton
+        android:id="@+id/btnLogIn"
+        android:layout_width="87dp"
+        android:layout_height="46dp"
+        android:background="@drawable/login_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ePassword"
+        app:layout_constraintVertical_bias="0.139"
+        android:contentDescription="@string/log_in" />
+
+    <ImageButton
+        android:id="@+id/btnSignUp"
+        android:layout_width="87dp"
+        android:layout_height="46dp"
+        android:background="@drawable/signup_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogIn"
+        app:layout_constraintVertical_bias="0.055"
+        android:contentDescription="@string/sign_up"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

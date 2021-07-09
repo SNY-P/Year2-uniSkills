@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/preset_grey"
+    tools:context=".EducationTasks">
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="234dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/atlantis_international"
+        android:shadowColor="@color/text_shadow"
+        android:shadowDy="5"
+        android:shadowRadius="0.1"
+        android:text="@string/username"
+        android:textColor="@color/black"
+        android:textFontWeight="600"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/task_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.361"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/currency_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="256dp"
+        android:layout_marginLeft="256dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/atlantis_international"
+        android:shadowColor="@color/text_shadow"
+        android:shadowDy="3"
+        android:shadowRadius="0.1"
+        android:text="@string/currency"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/currency_yellow"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/task_bar" />
+
+    <ProgressBar
+        android:id="@+id/exp_bar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="320dp"
+        android:layout_height="10dp"
+        android:max="100"
+        android:progress="50"
+        android:background="@drawable/prog_bars"
+        android:progressDrawable="@drawable/expbar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.703"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.066" />
+
+    <ProgressBar
+        android:id="@+id/task_bar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="320dp"
+        android:layout_height="10dp"
+        android:progress="50"
+        android:background="@drawable/prog_bars"
+        android:progressDrawable="@drawable/taskbar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.703"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.092" />
+
+    <LinearLayout
+        android:id="@+id/nav_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="bottom|center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:id="@+id/task_home_btn"
+            android:layout_width="104dp"
+            android:layout_height="100dp"
+            android:background="@drawable/home_button"
+            android:contentDescription="TODO" />
+
+        <ImageButton
+            android:id="@+id/task_task_btn"
+            android:layout_width="103dp"
+            android:layout_height="100dp"
+            android:background="@drawable/tasks_button" />
+
+        <ImageButton
+            android:id="@+id/task_shop_btn"
+            android:layout_width="103dp"
+            android:layout_height="100dp"
+            android:background="@drawable/shop_button" />
+
+        <ImageButton
+            android:id="@+id/task_settings_btn"
+            android:layout_width="104dp"
+            android:layout_height="100dp"
+            android:background="@drawable/settings_button" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="34dp"
+        android:layout_height="87dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/username"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.024"
+        app:srcCompat="@drawable/sprite" />
+
+    <ImageButton
+        android:id="@+id/addtask_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/addtask_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.105"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.184"
+        android:windowSoftInputMode="adjustNothing"/>
+
+    <LinearLayout
+        android:id="@+id/task_container"
+        android:layout_width="402dp"
+        android:layout_height="390dp"
+        app:layout_constraintBottom_toBottomOf="@+id/nav_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/username"
+        android:windowSoftInputMode="adjustNothing">
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/house_task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:fontFamily="@font/atlantis_international"
+        android:hint="Add an educational task"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.834"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.188"
+        android:windowSoftInputMode="adjustNothing"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

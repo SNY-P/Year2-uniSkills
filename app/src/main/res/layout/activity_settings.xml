@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/preset_grey"
+    tools:context=".settingsActivity">
+
+
+    <LinearLayout
+        android:id="@+id/nav_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="bottom|center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:id="@+id/settings_home_btn"
+            android:layout_width="104dp"
+            android:layout_height="100dp"
+            android:background="@drawable/home_button"
+            android:contentDescription="@string/home_btn" />
+
+        <ImageButton
+            android:id="@+id/settings_task_btn"
+            android:layout_width="103dp"
+            android:layout_height="100dp"
+            android:background="@drawable/tasks_button"
+            android:contentDescription="@string/task_btn"/>
+
+        <ImageButton
+            android:id="@+id/settings_shop_btn"
+            android:layout_width="103dp"
+            android:layout_height="100dp"
+            android:background="@drawable/shop_button"
+            android:contentDescription="@string/shop_btn"/>
+
+        <ImageButton
+            android:id="@+id/settings_settings_btn"
+            android:layout_width="104dp"
+            android:layout_height="100dp"
+            android:background="@drawable/settings_button"
+            android:contentDescription="@string/settings_btn"/>
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/logout_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/logout_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.127" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

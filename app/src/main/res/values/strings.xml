@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">UniSkills</string>
+    <string name="username">Username</string>
+    <string name="task_progress">Task progress</string>
+    <string name="currency">$999,999,999</string>
+    <string name="level">X</string>
+
+    <string name="avatar">Avatar</string>
+
+    <!-- For login and singup pages-->
+    <string name="username_hint">Username</string>
+    <string name="email_hint">Email address</string>
+    <string name="pw_hint">Password</string>
+    <string name="pw_hint2">Re-enter password</string>
+    <string name="name_hint">Name</string>
+    <string name="sign_up">Sign up</string>
+    <string name="log_in">Log in</string>
+
+    <!-- For nav buttons -->
+    <string name="home_btn">Home button</string>
+    <string name="task_btn">Tasks button</string>
+    <string name="shop_btn">Shop button</string>
+    <string name="settings_btn">Settings button</string>
+</resources>
