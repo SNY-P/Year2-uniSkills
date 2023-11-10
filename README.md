@@ -4,9 +4,9 @@ This is my Year 2 Software Engineering project that I completed with 5 other fri
 
 ## Members
 
-the teams members were:
+the team members were:
 - [Sonny](https://github.com/SNY-P)
 - [Precious](https://github.com/UP930568)
-- [Kyle](https://github.com/UP927887)
-- [Charles](https://github.com/Quusay)
+- [Kyle](https://github.com/kyletiago)
+- [Charles](https://github.com/charlesmjimenez)
 - [Harvey](https://github.com/harveyjones01)
